@@ -3,19 +3,27 @@ body {
     padding: 10px;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 .padre {
     display: flex;
     flex-flow: column nowrap;
 }
+
     .header{
         height: max-content;
-        background: #000;
+        background: url(../images/pexels-photo-220201.jpeg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
         padding: 20px;
     }
         .menu{
-            background: blue;
+            background: rgba(0, 0, 0, .1);
             display: flex;
             flex-flow: row nowrap;
             height: 80px;
@@ -24,22 +32,18 @@ body {
         }
             .logo{
                 margin: 20px;
-                height: fit-content;
-                background: blueviolet;
                 flex:1 1 auto;
                 padding: 20px;
             }
             .nav{
+                display: flex;
+                justify-content: space-between;
                 margin: 20px;
-                height: fit-content;
                 padding: 20px;
-                background: blueviolet;
                 flex:5 1 auto;
             }
             .social{
                 margin: 20px;
-                height: fit-content;
-                background: blueviolet;
                 flex:1 1 auto;
                 padding: 20px;
             }
@@ -118,6 +122,10 @@ body {
     .menu{
         flex-direction: column;
         height: auto;
+    }
+    .nav {
+        flex-direction: column;
+        margin: 30px;
     }
     .aside {
         display: flex;
